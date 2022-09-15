@@ -5,61 +5,51 @@ This uses 'react-jsonschema-form' component to convert JsconSchema into form com
 Example:
 From given Schema:
 
-``` type: "object",
-  required: ["employeeId", "mobileNumber", "gender", "multipleSelect"],
-  properties: {
-    employeeId: {
-      type: "string",
-      title: "Employee Id"
-    },
-    firstName: {
-      type: "string",
-      title: "First Name",
-      prefix: "Mr."
-    },
-    lastName: {
-      type: "string",
-      title: "Last Name",
-      suffix: "DONE"
-    },
-    email: {
-      type: "string",
-      title: "Email/User Name",
-      format: "email"
-    },
-    mobileNumber: {
-      type: "string",
-      title: "Mobile No."
-    },
-    callbackNumber: {
-      type: "string",
-      title: "Callback No."
-    },
-    ellisionId: {
-      type: "string",
-      title: "Ellision Id",
-      disabled: true
-    },
-    gender: {
-      type: "string",
-      title: "Gender",
-      anyOf: [
-        {
-          type: "string",
-          title: "Male",
-          enum: ["Male"]
-        },
-        {
-          type: "string",
-          title: "Female",
-          enum: ["Female"]
-        }
-      ],
+``` [
+    {
+        "title": "Record of employee",
+        "fields": [
+            {
+                "field_id": "id",
+                "field_label": "ID of employee",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter employee ID",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "Name",
+                "field_label": "Name of employee",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "email",
+                "field_label": "Email of employee",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter email",
+                "field_type": "text"
+            },
+            {
+                "field_id": "age",
+                "field_label": "Age of employee",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter age",
+                "field_type":"text"
+            },
+            {
+                "field_id": "contact",
+                "field_label": "Contact No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter contact no.",
+                "field_type": "text"
+            }
+            
+        ]
     }
-    
-    
-  
-    }
+]
 ```
 
 It generates Form Component:
