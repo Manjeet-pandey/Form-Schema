@@ -54,4 +54,5 @@ From given Schema:
 
 It generates Form Component:
 
-![image](https://user-images.githubusercontent.com/61266636/189469023-297adfa2-2fbf-487c-b956-65915f077f31.png)
+![image](https://user-images.githubusercontent.com/61266636/190326684-8417db74-96aa-47ff-b80b-ebfbc55eb063.png)
+
